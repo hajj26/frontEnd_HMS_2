@@ -1,0 +1,214 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0 auto;
+    width: 98%;
+    height: 40px;
+    background-color: white;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 65%;
+}
+.why_para{
+    font-size: small;
+    font-weight: 700;
+}
+.header_1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header_2{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.header_1 h5{
+    cursor: pointer;
+    width: fit-content;
+    white-space: nowrap;
+    display: inline-block;
+    color: mediumslateblue;
+}
+
+.header_2 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.header_2 ul li a{
+    text-decoration: none;
+    font-size: small;
+    color: black;
+}
+.icon_img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.icon_img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.header_2 button{
+    width: 120px;
+    display: flex;
+    justify-self: end;
+    background-color:mediumslateblue;
+    color: white;
+    padding-block: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about_bg{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.about_img{
+    width: 100%;
+    height: 250px;
+}
+
+.container_1{
+    padding-inline: 8%;
+    padding-top: 15%;
+}
+.container_1 p{
+    font-size: smaller;
+}
+.about_img img{
+    margin-left: 14%;
+    width: 60%;
+    height: 100%;
+    object-fit: contain;
+}
+.who_are{
+    width: 95%;
+    margin: 40px auto 0;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(2, 47%);
+}
+.container{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.container p{
+    font-size: smaller;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.left{
+    padding-top: 8%;
+}
+
+.grid_mission{
+    margin: 40px auto 0;
+    width: 93%;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(3,33%);
+}
+.grid_cont p,.grid_cont h4{
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+}
+.grid_cont{
+    padding-inline: 14%;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+.mission_img{
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+}
+.mission_img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.why_us_us{
+     margin: 40px auto 0;
+}
+.why_us{
+    margin: 0 auto;
+    width: 95%;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(3, 32%);
+}
+.tick_img{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+.tick_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.why_img{
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+}
+
+.why_img img{
+    width: 100%;
+    height: 100%;
+}
+.why_div{
+    margin-block: 20px;
+}
+.last{
+    font-size: smaller;
+}
+.choose{
+    margin-left: 3%;
+}
+
+footer{
+    background-color: mediumslateblue;
+    margin-top: 40px;
+    padding-block: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    border-radius: 5px;
+    grid-template-columns: repeat(3,33.33%);
+}
+
+.footer_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_cont ul li{
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.footer_cont ul li a{
+    text-decoration: none;
+    font-size: smaller;
+    color: white;
+}

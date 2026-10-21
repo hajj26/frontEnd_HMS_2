@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="appoint.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appointment page</title>
+</head>
+<body>
+    <header>
+        <div class="header_1">
+            <div class="icon_img"><img src="Images/plus.png" alt=""></div>
+            <h5>CArePlus Hospital</h5>
+        </div>
+        <div class="header_2">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Doctors</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <button>Book Appointment</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Book an Appointment</h2>
+        <p>Fill in the details below to schedule your visit</p>
+        <div class="prof_pict">
+            <img src="Images/doct.jpeg" alt="">
+        </div>
+
+        <div id="main_cont">
+        <div class="info">
+            <h4>Need Help?</h4>
+            <div>
+                <p>Call Us</p>
+                <p class="cont">0656876226</p>
+            </div>
+            <div>
+                <p>Email Us</p>
+                <p class="cont">carePlus@gmail.com</p>
+            </div>
+        </div>
+
+        
+        <div class="form">
+            <form action="" method="POST">
+              
+                <div class="grid_form">
+            
+                <div>
+                <label for="Depart">Department</label>
+                <input list="department" id="Depart" name="department">
+                <datalist id="department">
+                    <option value="Cardiology">
+                    <option value="Pediatics">
+                    <option value="Neurology">
+                    <option value="General Medicine">
+                    <option value="Oythecology">
+                </datalist></div>
+
+                <div>
+                <label for="Doct">Doctor</label>
+                <input list="Doctor" id="Doct" name="doctor" autocomplete="off">
+                <datalist id="Doctor">
+                <!--
+                   {% for doct in doctor %}
+                    <option value="{{doct.full_name}}">
+                   {% endfor %}-->
+                </datalist></div>
+
+                <div>
+                <label for="Date">Date</label>
+                <input type="datetime-local" id="Date" name="date">
+                </div>
+
+                <div>
+                <label for="Reason">Reason for Visit</label>
+                <input type="text" id="Reason" name="reason"></div>
+                </div>
+
+                <button>Book Appointment</button>
+            </form>
+        </div>
+        </div>
+    </main>
+    
+</body>
+</html>

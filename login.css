@@ -1,0 +1,129 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0 auto;
+    width: 98%;
+    height: 40px;
+    background-color: white;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 65%;
+}
+
+.header_1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header_2{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.header_1 h5{
+    cursor: pointer;
+    width: fit-content;
+    white-space: nowrap;
+    display: inline-block;
+    color: mediumslateblue;
+}
+
+.header_2 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.header_2 ul li a{
+    text-decoration: none;
+    font-size: small;
+    color: black;
+}
+.icon_img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.icon_img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.header_2 button{
+    width: 120px;
+    display: flex;
+    justify-self: end;
+    background-color:mediumslateblue;
+    color: white;
+    padding-block: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label{
+    display: block;
+    font-size: small;
+}
+main{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 10px;
+}
+
+.container_1{
+    width: 100%;
+}
+.container_1 img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+form{
+    height: 100%;
+    border-radius: 5px;
+    border: 5px solid whitesmoke;
+}
+form .btn_link{
+    font-size: xx-small;
+}
+.btn_link a{
+    text-decoration: none;
+}
+form input{
+    width: 65%;
+    padding-block: 3px;
+    outline: none;
+}
+form div{
+    margin-left: 28%;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+form p{
+    text-align: center;
+    font-size: small;
+}
+form h2{
+    color: blue;
+    text-align: center;
+}
+form button{
+    background-color: blue;
+    color: white;
+    width: 30%;
+    padding-inline: 3px;
+    padding-block: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 37%;
+}

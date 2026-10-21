@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="appoint.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appointment page</title>
+</head>
+<body>
+    <header>
+        <div class="header_1">
+            <div class="icon_img"><img src="Images/plus.png" alt=""></div>
+            <h5>CArePlus Hospital</h5>
+        </div>
+        <div class="header_2">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Doctors</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <button>Book Appointment</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Book an Appointment</h2>
+        <p>Fill in the details below to schedule your visit</p>
+        <div class="prof_pict">
+            <img src="Images/doct.jpeg" alt="">
+        </div>
+
+        <div id="main_cont">
+        <div class="info">
+            <h4>Need Help?</h4>
+            <div>
+                <p>Call Us</p>
+                <p class="cont">0656876226</p>
+            </div>
+            <div>
+                <p>Email Us</p>
+                <p class="cont">carePlus@gmail.com</p>
+            </div>
+        </div>
+
+        
+        <div class="form">
+            <form action="" method="POST">
+              
+                <div class="grid_form">
+                <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="first_name" autocomplete="off">
+                </div>
+
+                <div>
+                <label for="middleName">Middle Name</label>
+                <input type="text" id="middleName" name="middle_name" autocomplete="off">
+                </div>
+
+                <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="last_name" autocomplete="off">
+                </div>
+
+                <div>
+                <label for="Phone">Phone Number</label>
+                <input type="tel" id="Phone" name="phone" autocomplete="off">
+                </div>
+
+                <div>
+                <label for="Email">Email Address</label>
+                <input type="email" id="Email" name="email" autocomplete="off">
+                </div>
+
+                <div>
+                <label for="Depart">Department</label>
+                <input list="department" id="Depart" name="department">
+                <datalist id="department">
+                    <option value="Cardiology">
+                    <option value="Pediatics">
+                    <option value="Neurology">
+                    <option value="General Medicine">
+                    <option value="Oythecology">
+                </datalist></div>
+
+                <div>
+                <label for="Doct">Doctor</label>
+                <select id="Doctor" name="doctor">
+                <!--
+                   {% for doct in doctor %}
+                    <option value="{{doct.id}}">{{doct.full_name}}</option>
+                   {% endfor %}-->
+                </select></div>
+
+                <div>
+                <label for="Date">Date</label>
+                <input type="datetime-local" id="Date" name="date">
+                </div>
+
+                <div>
+                <label for="Reason">Reason for Visit</label>
+                <input type="text" id="Reason" name="reason"></div>
+                </div>
+
+                <button>Book Appointment</button>
+            </form>
+        </div>
+        </div>
+    </main>
+    
+</body>
+</html>

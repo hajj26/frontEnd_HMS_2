@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="user.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user profile</title>
+</head>
+<body>
+    <header>
+        <div class="header_1">
+            <div class="icon_img"><img src="Images/plus.png" alt=""></div>
+            <h5>CArePlus Hospital</h5>
+        </div>
+        <div class="header_2">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Doctors</a></li>
+                <li><a href="">Logout</a></li>
+            </ul>
+            <button>Book Appointment</button>
+        </div>
+    </header>
+
+    <main>
+    
+        <div class="header">
+            <div class="left">
+                <div class="prof_img">
+                    <img src="Images/profile.png" alt="">
+                </div>
+                <div class="patient_det">
+                    <h4>{{patient.0.first_name}} {{patient.0.last_name}}</h4>
+                    <div id="btn_prof">
+                        <span class="pat_img"><img src="Images/profile.png" alt=""></span>
+                        <p class="pat_col">patient</p>
+                    </div>
+                    <div class="date">
+                        <p class="img_user"><img src="Images/calendar.png" alt=""></p>
+                        <p class="p_inline">Date Of Birth:&nbsp;{{patient.0.birth_day_date}}</p>
+                    </div>
+
+                    <div class="gender">
+                    <p class="img_user"><img src="Images/gender.png" alt=""></p>
+                        <p class="p_inline">Gender:&nbsp;{{patient.0.gender}}</p>
+                    </div>
+
+                    <div class="status">
+                        <p class="img_user"><img src="Images/status.png" alt=""></p>
+                        <p class="p_inline">Status:&nbsp;<samp id="status">Active</samp></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="email">
+                    <p class="img_user"><img src="Images/email.png" alt=""></p>
+                    <p class="p_inline">{{patient.0.email}}</p>
+                </div>
+
+                <div class="phone">
+                    <p class="img_user"><img src="Images/phone.png" alt=""></p>
+                    <p class="p_inline">{{patient.0.phone}}</p>
+                </div>
+
+                <div class="address_location">
+                    <p class="img_user"><img src="Images/location.png" alt=""></p>
+                    <p class="p_inline">{{patient.0.address}}, Dar Es Salaam</p>
+                </div>
+
+                <div class="member">
+                    <p class="img_user"><img src="Images/calendar.png" alt=""></p>
+                    <p class="p_inline">Member Since:&nbsp;{{patient.0.creataed_at}}</p>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="main">
+            <div class="info_div">
+                <div class="per_info">
+                    <p class="pet_img"><img src="Images/profile.png" alt=""></p>
+                    <p class="pet_p">Persoanal Information</p>
+                </div>
+                <div class="per_info">
+                    <p class="per_img"><img src="Images/email.png" alt="">Email</p>
+                    <p class="per_p">{{patient.0.email}}</p>
+                </div>
+                <div class="per_info">
+                    <p class="per_img"><img src="Images/phone.png" alt="">Phone</p>
+                    <p class="per_p">{{patient.0.phone}}</p>
+                </div>
+                <div class="per_info">
+                    <p class="per_img"><img src="Images/location.png" alt="">Address</p>
+                    <p class="per_p">{{patient.0.address}},Dar Es Salaam</p>
+                </div>
+                <div class="per_info">
+                    <p class="per_img"><img src="Images/calendar.png" alt="">Nationality</p>
+                    <p class="per_p">Tanzania</p>
+                </div>
+                <div class="per_info">
+                    <p class="per_img"><img src="Images/marital.png" alt="">Marital Status</p>
+                    <p class="per_p">Single</p>
+                </div>
+            </div>
+            <div class="info_div">
+                <div class="medi_info">
+                    <p class="pet_img"><img src="Images/medical.png" alt=""></p>
+                    <p class="pet_p">Medical Information</p>
+                </div>
+                <div class="medi_info">
+                    <p class="per_img"><img src="Images/blood.png" alt="">Blood Group</p>
+                    <p class="per_p">o+</p>
+                </div>
+                <div class="medi_info">
+                    <p class="per_img"><img src="Images/alert.png" alt="">alergies</p>
+                    <p class="per_p">Penicilin,Polen</p>
+                </div>
+                <div class="medi_info">
+                    <p class="per_img"><img src="Images/history.png" alt="">Medical History</p>
+                    <p class="per_p">No chronic disease</p>
+                </div>
+                <div class="medi_info">
+                    <p class="per_img"><img src="Images/mdecation.png" alt="">Current Mediation</p>
+                    <p class="per_p">Vitamin D(daily)</p>
+                </div>
+                <div class="medi_info">
+                    <p class="per_img"><img src="Images/checkup.png" alt="">Last Checkup</p>
+                    <p class="per_p">26 Feb 2024</p>
+                </div>
+            </div>
+        </div>
+     
+
+    <div class="sor">
+        <div class="appintment">
+            <div class="top">
+                <p class="clock_p"><span class="clock"><img src="Images/clock.png" alt=""></span>Recently Appointment</p>
+                <button>View More</button>
+            </div>
+
+            <div class="grid">
+                <div class="date">
+                    <p class="head">Date</p>
+                    <p>12 Jan 2025</p>
+                    <p>01 Jan 2025</p>
+                    <p>22 Jan 2024</p>
+                    <p>02 Feb 2024</p>
+                </div>
+                <div class="doctor">
+                    <p class="head">Doctor</p>
+                    <p>Dr.Maulid</p>
+                    <p>Dr.Kessy</p>
+                    <p>Dr.Balewa</p>
+                    <p>Dr.Ramadhani</p>
+                </div>
+                <div class="department">
+                    <p class="head">Department</p>
+                    <p>Dentist</p>
+                    <p>Cardiologist</p>
+                    <p>Dentist</p>
+                    <p>Cardiologist</p>
+                </div>
+                <div class="purpose">
+                    <p class="head">purpose</p>
+                    <p>Cleaning Tooth</p>
+                    <p>Muscles pain</p>
+                    <p>Cleaning Tooth</p>
+                    <p>Muscles pain</p>
+                </div>
+                <div class="status">
+                    <p class="head">Status</p>
+                    <button>Complete</button>
+                    <button>Complete</button>
+                    <button>Complete</button>
+                    <button>Complete</button>
+                </div>
+            </div>
+        </div>
+    </main>
+ </div>
+</body>
+</html>

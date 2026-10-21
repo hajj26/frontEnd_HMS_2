@@ -1,0 +1,137 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0 auto;
+    width: 98%;
+    height: 40px;
+    background-color: white;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 65%;
+}
+
+.header_1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header_2{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.header_1 h5{
+    cursor: pointer;
+    width: fit-content;
+    white-space: nowrap;
+    display: inline-block;
+    color: mediumslateblue;
+}
+
+.header_2 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.header_2 ul li a{
+    text-decoration: none;
+    font-size: small;
+    color: black;
+}
+.icon_img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.icon_img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.header_2 button{
+    width: 120px;
+    display: flex;
+    justify-self: end;
+    background-color:mediumslateblue;
+    color: white;
+    padding-block: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main{
+    width: 95%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    gap: 10px;
+    margin: 20px auto 0 auto;
+}
+label{
+    display: block;
+    font-size: small;
+}
+.input_grid{
+    display: grid;
+    grid-template-columns: repeat(2,48%);
+    margin-bottom: 20px;
+    margin-top: 45px;
+}
+.input_grid input{
+    width: 80%;
+}
+.input_grid div{
+    margin-bottom: 20px;
+}
+.form{
+    padding-left: 6%;
+    width: 95%;
+    border-radius: 5px;
+    border: 4px solid whitesmoke;
+}
+
+
+input{
+    outline: none;
+    padding-block: 5px;
+}
+form button{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 35%;
+    padding-inline: 3px;
+    padding-block: 5px;
+    margin-left: 29%;
+}
+
+#reg{
+    font-size: xx-small;
+    margin-left: 33%;
+    margin-bottom: 18px;
+}
+.regImage{
+    width: 100%;
+}
+.regImage img{
+    width: 98%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.h2{
+    color: blue;
+}
+
+.p{
+    font-size: small;
+}

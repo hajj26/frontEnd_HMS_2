@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="account.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account craeate</title>
+</head>
+<body>
+    <header>
+        <div class="header_1">
+            <div class="icon_img"><img src="Images/plus.png" alt=""></div>
+            <h5>CArePlus Hospital</h5>
+        </div>
+        <div class="header_2">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="doctor.html">Doctors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button>Welcome to CArePlus</button>
+        </div>
+    </header>
+
+
+    <main>
+        <h2 class="h2">Create Account</h2>
+        <p class="p">Fill in detail below to create an account</p>
+        <div class="main">
+            <div class="regImage">
+                <img src="Images/regImage.jpg" alt="">
+            </div>
+
+            <div class="form">
+                    <form action="" method="POST">
+                      
+                        <div class="input_grid">
+
+                         <div>
+                            <label for="FirstNmae">First Name</label>
+                            <input type="text" id="FirstNmae" name="first_name">
+                         </div>
+
+                         <div>
+                            <label for="middleName">Middle Name</label>
+                            <input type="text" id="middleName" name="middle_name">
+                         </div>
+                    
+
+                        
+                            <div>
+                                <label for="LastName">Last Name</label>
+                                <input type="text" id="LastName" name="last_name">
+                            </div>
+
+                            <div>
+                                <label for="BirthDate">Date Of Birth</label>
+                                <input type="date" id="BirthDate" name="birth_day_date">
+                            </div>
+
+                            <div>
+                                <label for="Address">Address</label>
+                                <input type="text" id="Address" name="address">
+                            </div>
+
+                            <div>
+                                <label for="BirthDate">Gender</label>
+                                <input list="gender" id="BirthDate" name="gender">
+                                <datalist id="gender">
+                                    <option value="male">
+                                    <option value="female">
+                                </datalist>
+                            </div>
+
+                            <div>
+                                <label for="Email">Email Address</label>
+                                <input type="email" id="Email" name="email">
+                            </div>
+
+                            <div>
+                                <label for="Phone">Phone Number</label>
+                                <input type="tel" id="Phone" name="phone">
+                            </div>
+
+                            <div>
+                                <label for="Username">Username</label>
+                                <input type="text" id="Username" name="username">
+                             </div>
+
+                              <div>
+                               <!-- <label for="Username">Username</label>
+                                <input type="password" id="Username" name="username">-->
+                             </div>
+                    
+
+                        
+                            <div>
+                                <label for="Password">Password</label>
+                                <input type="password" id="Password" name="password">
+                             </div>
+                                    
+                            <div>
+                                <label for="conf_pass">Confirm Passoword</label>
+                                <input type="password" id="conf_pass" name="conf_pass">
+                            </div>
+                        </div>
+
+                        <button>Register</button>
+                        <p id="reg">Already have an Account?<a href="login.html">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
